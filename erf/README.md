@@ -1,6 +1,6 @@
 # `std::erf` tutorial
 
-Questa cartella contiene un semplice esempio in `c++` di come utilizzare la funzione [`std::erf`](https://en.cppreference.com/w/cpp/numeric/math/erf) per calcolare le probabilità associate alla [distribuzione normale (o gaussiana)](https://en.wikipedia.org/wiki/Normal_distribution)
+Questa cartella contiene un semplice esempio in `c++` di come utilizzare la funzione [`std::erf`](https://en.cppreference.com/w/cpp/numeric/math/erf) per calcolare le probabilità associate alla [distribuzione normale (o gaussiana)](https://en.wikipedia.org/wiki/Normal_distribution).
 
 ## Compilazione ed esecuzione
 
@@ -38,9 +38,9 @@ in base al quale
 
 <img src="https://render.githubusercontent.com/render/math?math=dy = \sqrt{2 \sigma^2} dx">
 
-<img src="https://render.githubusercontent.com/render/math?math=x = a -> y_a = \frac{a - \mu}{\sqrt{2 \sigma^2}}">
+<img src="https://render.githubusercontent.com/render/math?math=x = a \rightarrow y_a = \frac{a - \mu}{\sqrt{2 \sigma^2}}">
 
-<img src="https://render.githubusercontent.com/render/math?math=y_b = \frac{b - \mu}{\sqrt{2 \sigma^2}}">
+<img src="https://render.githubusercontent.com/render/math?math=x = b \rightarrow y_b = \frac{b - \mu}{\sqrt{2 \sigma^2}}">
 
 quindi
 
