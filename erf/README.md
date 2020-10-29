@@ -23,7 +23,7 @@ per il quale è presente un esempio di [makefile](makefile)
 
 La funzione `std::erf`, denotata $\text{erf}(x)$ in seguito, viene definita dallo standard come
 
-$\text{erf}(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2} dt$
+<img src="https://render.githubusercontent.com/render/math?math=\text{erf}(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2} dt">
 
 mentre il calcolo della probabilità associata ad una distribuzione normale, di media $\mu$ e deviazione standard $\sigma$, viene effettuato tramite
 
