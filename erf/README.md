@@ -25,11 +25,11 @@ La funzione `std::erf`, denotata <img src="https://render.githubusercontent.com/
 
 <img src="https://render.githubusercontent.com/render/math?math=\text{erf}(x) = \frac{2}{\sqrt{\pi}}\int_0^x e^{-t^2} dt">
 
-mentre il calcolo della probabilità associata ad una distribuzione normale, di media $\mu$ e deviazione standard $\sigma$, viene effettuato tramite
+mentre il calcolo della probabilità associata ad una distribuzione normale, di media <img src="https://render.githubusercontent.com/render/math?math=\mu"> e deviazione standard <img src="https://render.githubusercontent.com/render/math?math=\sigma">, viene effettuato tramite
 
 <img src="https://render.githubusercontent.com/render/math?math=\text{P}(a < x < b) = \frac{1}{\sqrt{2\pi \sigma^2}}\int_a^b e^{-\frac{(x - \mu)^2}{2 \sigma^2}} dt">
 
-Occorre quindi riscrivere l'espressione precedente in termini di $\text{erf}(x)$. Il confronto tra i due integrali suggerisce di operare il cambio di variabili
+Occorre quindi riscrivere l'espressione precedente in termini di <img src="https://render.githubusercontent.com/render/math?math=\text{erf}(x)">. Il confronto tra i due integrali suggerisce di operare il cambio di variabili
 
 
 <img src="https://render.githubusercontent.com/render/math?math=y = \frac{x - \mu}{\sqrt{2 \sigma^2}}">
