@@ -19,6 +19,19 @@ per il quale è presente un esempio di [makefile](makefile)
 > ./erf_tutorial.exe
 ```
 
+Output atteso
+```
+std::erf tutorial
+P( 4.6 < x < 6 ) = 0.682689
+P( 3.9 < x < 6.7 ) = 0.9545
+P( 3.2 < x < 7.4 ) = 0.9973
+P( 6 < x < 6.7 ) = 0.135905
+P( 3.9 < x < 4.6 ) = 0.135905
+P( 5.3 < x < inf ) = 0.5
+P( -inf < x < inf ) = 1
+```
+
+
 ## Considerazioni analitiche
 
 La funzione `std::erf`, denotata <img src="https://render.githubusercontent.com/render/math?math=\text{erf}(x)"> in seguito, viene definita dallo standard come
