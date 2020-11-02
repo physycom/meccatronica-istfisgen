@@ -133,5 +133,5 @@ int main()
             << "Total error                  : " << err_tot << std::endl;
   std::printf("Best value                   : t_best = %.2f +- %.2f\n", mean, err_tot);
 
-  retun 0;
+  return 0;
 }
