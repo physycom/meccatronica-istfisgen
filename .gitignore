@@ -1,5 +1,7 @@
 # erf_tutorial build product
-erf/erf_tutorial
-erf/erf_tutorial.obj
-erf/erf_tutorial.exe
-
+1_erf/erf_tutorial
+1_erf/erf_tutorial.obj
+1_erf/erf_tutorial.exe
+2_analisi/analisi_errori
+2_analisi/analisi_errori.obj
+2_analisi/analisi_errori.exe
