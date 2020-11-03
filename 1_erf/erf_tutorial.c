@@ -27,7 +27,7 @@ double normal_prob(double a, double b, double X, double s)
   double ya = (a - X) / (s * sqrt(2.) );
   double yb = (b - X) / (s * sqrt(2.) );
 
-  // compute probability using std::erf
+  // compute probability using erf
   double p = 0.5 * (erf(yb) - erf(ya));
   return p;
 }
@@ -53,9 +53,7 @@ int main()
     X+s, X+2*s,
     X-2*s, X-s
   };
-
   int nintervals = sizeof(intervals) / sizeof(double) / 2;
-  //printf("Number of intervals %d\n", nintervals);
 
   // probability evaluation
   for (i=0; i < nintervals; ++i)
