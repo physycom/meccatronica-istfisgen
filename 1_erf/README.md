@@ -4,22 +4,42 @@ Questa cartella contiene un semplice esempio in `c++` di come utilizzare la funz
 
 ## Compilazione ed esecuzione
 
+### Online
+Sono disponibili siti che offrono compilazione/esecuzione da browser, ad esempio [rextester.com](https://rextester.com/l/c_online_compiler_gcc) o [OnlineGDB](https://www.onlinegdb.com/online_c++_compiler).
+
+### Locale
 Entrare nel merito delle specifiche _toolchain_ ([make](https://www.gnu.org/software/make/), [nmake](https://docs.microsoft.com/it-it/cpp/build/reference/running-nmake?view=msvc-160), [ninja](https://ninja-build.org/), [cmake](https://cmake.org/), [msbuild](https://docs.microsoft.com/it-it/visualstudio/msbuild/msbuild?view=vs-2019)), proprie dei vari sistemi operativi o _portable_ che siano, esula dagli scopi di questo tutorial. Pertanto ci limitiamo a riportare per comodità le linee di comando rilevanti per i compilatori più diffusi
 
 - [GCC](https://gcc.gnu.org/) (OS di riferimento : Linux/MacOS)
+Per il `c++`
 ```
 $ g++ -std=c++11 erf_tutorial.cpp -o erf_tutorial
 $ ./erf_tutorial
 ```
-per il quale è presente un esempio di [makefile](makefile)
+Per il `C`
+```
+$ gcc erf_tutorial.c -o erf_tutorialc -lm
+$ ./erf_tutorialc
+```
+
+È presente inoltre un esempio di [makefile](makefile) da usare lanciando
+```
+$ make all
+```
 
 - [MSVC](https://visualstudio.microsoft.com/it/vs/features/cplusplus/) (OS di riferimento : Windows)
+Per il `c++`
 ```
 > cl .\erf_tutorial.cpp
 > ./erf_tutorial.exe
 ```
+Per il `C`
+```
+> cl .\erf_tutorial.c -o erf_tutorialc.exe
+> ./erf_tutorialc.exe
+```
 
-Output atteso
+## Output atteso
 ```
 std::erf tutorial
 P( 4.6 < x < 6 ) = 0.682689

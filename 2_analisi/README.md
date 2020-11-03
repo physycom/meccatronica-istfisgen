@@ -6,7 +6,7 @@ Questa cartella contiene una implementazione in `c++` dell'analisi da effettuare
 
 Valgono le considerazioni che trovate [qui](1_erf/README.md).
 
-Output atteso
+## Output atteso
 ```
 **** Original sample :
 Ndata                        : 30
