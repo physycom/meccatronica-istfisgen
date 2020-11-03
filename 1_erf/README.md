@@ -13,6 +13,7 @@ Sono disponibili siti che offrono compilazione/esecuzione da browser, ad esempio
 Entrare nel merito delle specifiche _toolchain_ ([make](https://www.gnu.org/software/make/), [nmake](https://docs.microsoft.com/it-it/cpp/build/reference/running-nmake?view=msvc-160), [ninja](https://ninja-build.org/), [cmake](https://cmake.org/), [msbuild](https://docs.microsoft.com/it-it/visualstudio/msbuild/msbuild?view=vs-2019)), proprie dei vari sistemi operativi o _portable_ che siano, esula dagli scopi di questo tutorial. Pertanto ci limitiamo a riportare per comodità le linee di comando rilevanti per i compilatori più diffusi
 
 - [GCC](https://gcc.gnu.org/) (OS di riferimento : Linux/MacOS)
+
 Per il `c++`
 ```
 $ g++ -std=c++11 erf_tutorial.cpp -o erf_tutorial
@@ -30,6 +31,7 @@ $ make all
 ```
 
 - [MSVC](https://visualstudio.microsoft.com/it/vs/features/cplusplus/) (OS di riferimento : Windows)
+
 Per il `c++`
 ```
 > cl .\erf_tutorial.cpp
