@@ -188,5 +188,8 @@ int main()
   printf("Corrected standard deviation : %f\n\n", stdc);
   printf("Best value                   : t_best = %.2f +- %.2f\n", m, err_tot);
 
+  // final clean up
+  free(data_status);
+  free(datagood);
   return 0;
 }

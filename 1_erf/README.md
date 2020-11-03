@@ -39,6 +39,7 @@ Per il `C`
 > ./erf_tutorialc.exe
 ```
 
+
 ## Output atteso
 ```
 std::erf tutorial
