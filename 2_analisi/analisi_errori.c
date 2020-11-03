@@ -95,7 +95,7 @@ int main()
   double m, var, varc, stdd, stdc;
   double err_exp, err_stat, err_tot;
   double x, t, n;
-  double *data_status, *datagood;
+  double *data_status, *data_good;
 
   // data
   double data[] = {
@@ -113,12 +113,12 @@ int main()
   err_exp = 0.1;
 
   // original sample analysis
-  ndata = sizeof(data) / sizeof(double);
-  m = mean(data, ndata);
-  var = variance(data, ndata);
-  varc = (ndata * var) / (ndata - 1);
-  stdd = sqrt(var);
-  stdc = sqrt(varc);
+  ndata = sizeof(data) / sizeof(double);    // use sizeof to compute array size (doesn't work with pointers)
+  m = mean(data, ndata);                    // call mean evaluation function
+  var = variance(data, ndata);              // call variance evaluation function
+  varc = (ndata * var) / (ndata - 1);       // compute corrected variance
+  stdd = sqrt(var);                         // compute standard deviation
+  stdc = sqrt(varc);                        // compute corrected standard deviation
 
   printf("**** Original sample : \n");
   printf("Ndata                        : %d\n", ndata);
@@ -161,24 +161,24 @@ int main()
   }
 
   // copy good data to new array
-  datagood = (double*) malloc(good_counter * sizeof(double));
+  data_good = (double*) malloc(good_counter * sizeof(double));
   good_idx = 0;
   for (i = 0; i < ndata; ++i) {
     if (data_status[i] == 1) { // chavenet-accepted values
-      datagood[good_idx] = data[i]; // store good value in datagood
+      data_good[good_idx] = data[i]; // store good value in datagood
       ++good_idx;                   // increase index
     }
   }
 
   // final sample analysis
   ndata = good_counter;
-  m = mean(datagood, ndata);
-  var = variance(datagood, ndata);
-  varc = (ndata * var) / (ndata - 1);
-  stdd = sqrt(var);
-  stdc = sqrt(varc);
-  err_stat = stdc / sqrt(ndata);
-  err_tot = sqrt( err_exp * err_exp + err_stat * err_stat );
+  m = mean(data_good, ndata);                                // call mean evaluation function
+  var = variance(data_good, ndata);                          // call variance evaluation function
+  varc = (ndata * var) / (ndata - 1);                        // compute corrected variance
+  stdd = sqrt(var);                                          // compute standard deviation
+  stdc = sqrt(varc);                                         // compute corrected standard deviation
+  err_stat = stdc / sqrt(ndata);                             // compute standard mean error
+  err_tot = sqrt( err_exp * err_exp + err_stat * err_stat ); // combine statistical and experimental error
   printf("\n**** Filtered sample : \n");
   printf("Ndata                        : %d\n", ndata);
   printf("Mean                         : %f\n", m);
@@ -190,6 +190,6 @@ int main()
 
   // final clean up
   free(data_status);
-  free(datagood);
+  free(data_good);
   return 0;
 }

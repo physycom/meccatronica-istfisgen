@@ -1,6 +1,8 @@
 # Analisi degli errori
 
-Questa cartella contiene una implementazione in `c++` dell'analisi da effettuare nella risoluzione de [Esecizio 1 - Lezione 7](https://virtuale.unibo.it/mod/resource/view.php?id=352271)
+Questa cartella contiene un esempio di implementazione dell'analisi da effettuare nella risoluzione de [Esecizio 1 - Lezione 7](https://virtuale.unibo.it/mod/resource/view.php?id=352271). Sono presenti i sorgenti:
+- [`analisi_errori.c`](analisi_errori.c) (linguaggio `C`)
+- [`analisi_errori.cpp`](analisi_errori.cpp) (linguaggio `c++`)
 
 ## Compilazione ed esecuzione
 

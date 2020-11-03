@@ -1,6 +1,8 @@
-# `std::erf` tutorial
+# `erf` tutorial
 
-Questa cartella contiene un semplice esempio in `c++` di come utilizzare la funzione [`std::erf`](https://en.cppreference.com/w/cpp/numeric/math/erf) per calcolare le probabilità associate alla [distribuzione normale (o gaussiana)](https://en.wikipedia.org/wiki/Normal_distribution).
+Questa cartella contiene un esempio di come utilizzare la funzione [`erf`](https://en.cppreference.com/w/cpp/numeric/math/erf) per calcolare le probabilità associate alla [distribuzione normale (o gaussiana)](https://en.wikipedia.org/wiki/Normal_distribution). Sono presenti i sorgenti:
+- [`erf_tutorial.c`](erf_tutorial.c) (linguaggio `C`)
+- [`erf_tutorial.cpp`](erf_tutorial.cpp) (linguaggio `c++`)
 
 ## Compilazione ed esecuzione
 
