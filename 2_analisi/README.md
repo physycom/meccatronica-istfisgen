@@ -6,7 +6,7 @@ Questa cartella contiene un esempio di implementazione dell'analisi da effettuar
 
 ## Compilazione ed esecuzione
 
-Valgono le considerazioni che trovate [qui](1_erf/README.md).
+Valgono le considerazioni che trovate [qui](../1_erf/README.md).
 
 ## Output atteso
 ```
