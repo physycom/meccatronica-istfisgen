@@ -6,4 +6,4 @@ Questa cartella contiene un esempio di come leggere e scrivere dati da file in f
 
 ## Compilazione ed esecuzione
 
-Valgono le considerazioni che trovate [qui](1_erf/README.md).
+Valgono le considerazioni che trovate [qui](https://github.com/physycom/meccatronica-istfisgen/blob/main/1_erf/README.md).
