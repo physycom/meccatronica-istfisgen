@@ -11,3 +11,10 @@
 2_analisi/analisi_erroric
 2_analisi/analisi_erroric.obj
 2_analisi/analisi_erroric.exe
+3_fileio/fileio
+3_fileio/fileio.obj
+3_fileio/fileio.exe
+3_fileio/fileioc
+3_fileio/fileioc.obj
+3_fileio/fileioc.exe
+3_fileio/data_*.csv

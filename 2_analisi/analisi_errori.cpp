@@ -1,5 +1,5 @@
 /*
-std::erf tutorial
+error analysis
 */
 
 #include <iostream>
